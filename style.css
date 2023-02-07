@@ -128,7 +128,6 @@ ul{
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .search-bar {
@@ -163,4 +162,37 @@ ul{
     gap: 1rem;
     align-items: center;
     font-size: .8rem;
+}
+
+/* for the intro */
+.intro {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.intro .intro-title{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.intro button{
+    color: var(--white);
+    background-color: var(--violet);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
 }
