@@ -52,6 +52,12 @@ table {
 :root{
     --violet: #7e22ce;
     --white: #faf5ff;
+    --grey: #e5e7eb;
+}
+
+html, body {
+    font-family: 'Urbanist', sans-serif;
+
 }
 
 h1 {
@@ -63,7 +69,6 @@ h1 {
 .container {
     display: inline-grid;
     grid-template-columns: 1fr 3fr;
-    gap: 20px;
 }
 
 /* for the side bar */
@@ -112,4 +117,50 @@ ul{
 
 .nav, .settings{
     padding-left: 2rem;
+}
+
+/* for the main content */
+/* for the search bar and header */
+.search-profile{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.search-bar {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-profile svg, .search-profile input {
+    height: 1.5rem;
+    width: auto;
+}
+
+.search-profile svg {
+    fill: var(--violet);
+}
+
+.search-profile input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: var(--grey);
+    width: 50rem;
+    padding: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    font-size: .8rem;
 }
